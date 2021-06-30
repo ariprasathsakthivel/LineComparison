@@ -1,13 +1,1 @@
-﻿
-using System;
-
-namespace LineComparison
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
-}
+﻿//Welcome to the program. In this program we're going to compare the lines
