@@ -7,7 +7,19 @@ namespace LineComparison
     {
         static void Main(string[] args)
         {
-            int x1, y1, x2, y2, lengthOfLine; 
+            if (LineLength() == LineLength())
+            {
+                Console.WriteLine("Both lines are equal");
+            }
+            else
+            {
+                Console.WriteLine("Both lines are not equal");
+            }
+        }
+
+        private static int LineLength()
+        {
+            int x1, y1, x2, y2, lengthOfLine;
             Console.WriteLine("Enter the coordinate X1");
             x1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter the coordinate Y1");
@@ -17,7 +29,7 @@ namespace LineComparison
             Console.WriteLine("Enter the coordinate Y2");
             y2 = Convert.ToInt32(Console.ReadLine());
             lengthOfLine = (int)Math.Sqrt(Convert.ToDouble((x2 - x1) ^ 2 + (y2 - y1) ^ 2));
-            Console.WriteLine("Length of Line is {0}", lengthOfLine);
+            return lengthOfLine;
         }
     }
 }
