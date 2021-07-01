@@ -7,14 +7,23 @@ namespace LineComparison
     {
         static void Main(string[] args)
         {
-            if (LineLength() == LineLength())
+            int firstLine, secondLine;
+            firstLine = LineLength();
+            secondLine = LineLength();
+            if (firstLine == secondLine)
             {
                 Console.WriteLine("Both lines are equal");
             }
+            else if (firstLine > secondLine)
+            {
+                Console.WriteLine("First line is greater than second line");
+            }
             else
             {
-                Console.WriteLine("Both lines are not equal");
+                Console.WriteLine("Second line is greater than first line");
             }
+            Console.WriteLine("Length of first line {0}", firstLine);
+            Console.WriteLine("Length of second line {0}", secondLine);
         }
 
         private static int LineLength()
